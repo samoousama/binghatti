@@ -1381,6 +1381,12 @@ section.gallery{
     font-size: 22px;
     padding: 8px 8px;
   }
+  #about::before{
+    opacity: 1;
+  }
+  .location-sc:before{
+    opacity: 1;
+  }
 
 }
 @media (max-width: 991px) {

@@ -1076,7 +1076,7 @@ section.gallery{
     border-bottom: 1px solid var(--emaar-accent-3);
   }
   .hero-section{
-    min-height: clamp(300px, 65vh, 830px);
+    min-height: auto;
     align-items: flex-start;
     padding: 20px 0px 0px 0px;
     justify-content: center;
@@ -1146,7 +1146,7 @@ section.gallery{
       font-size: 23px !important;
   }
   section.about {
-      padding: 80px 0px 30px 0px;
+      padding: 120px 0px 30px 0px;
   }
   .about-d-flx {
       display: grid;

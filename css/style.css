@@ -91,7 +91,7 @@ a:hover {
 ===================================== */
 header.header {
   position: fixed;
-  z-index: 99;
+  z-index: 9999;
   width: 100%;
   top: 0px;
 }
@@ -118,8 +118,8 @@ header.header {
 }
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-  background-color: #f1f1f1;
-  color: #0F3D3A;
+  background: linear-gradient(135deg, #808081, #000000);
+  color: var(--emaar-accent-3);
 }
 header.header.header-scrolled{
   background: var(--emaar-accent-6) !important;
@@ -128,7 +128,8 @@ header.header.header-scrolled .navbar .nav-link{
   color: var(--emaar-accent-5);
 }
 header.header.header-scrolled .navbar .nav-link:hover{
-  background: var(--theme-bg) !important;
+  background: linear-gradient(135deg, #808081, #000000);
+  color: var(--emaar-accent-3);
 }
 header.header.header-scrolled .navbar .navbar-brand{
   color: var(--emaar-accent-5);

@@ -1506,6 +1506,13 @@ section.gallery{
   .paymentplan-sc .button-group-block .fill-btn{
     background: #636363;
   }
+  .outline-btn{
+    background: #ccc;
+    color: var(--emaar-accent-6) !important;
+  }
+  .paymentplan-sc .button-group-block .outline-btn{
+    color: var(--emaar-accent-3) !important; 
+  }
 
 }
 @media (max-width: 991px) {

@@ -11,6 +11,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- input -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/css/intlTelInput.css">
 </head>
 <body>
 
@@ -60,7 +62,7 @@
               <div class="hero-content">
                 <div class="hero-text-wrap">
                   <img src="img/binghatti-logo.svg" alt="Logo">
-                    <a href="#" class="content-btn btn btn-success rounded-2 d-flex align-items-center fill-btn">
+                    <a href="#" class="content-btn btn btn-success rounded-2 d-flex align-items-center fill-btn" data-bs-toggle="modal" data-bs-target="#binghattiModal">
                       Register your interest
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
                         <path d="M5 12H19M19 12L13 6M19 12L13 18"
@@ -125,7 +127,7 @@
                   <p>Binghatti is one of Dubai’s most renowned real estate developers, celebrated for its striking architectural designs and timely project deliveries. Known for their innovative facades and practical layouts, they have become a top choice for both homebuyers and investors.</p>
                   <p>With a diverse portfolio across prime Dubai locations, Binghatti offers properties that promise exceptional returns, vibrant community living, and premium amenities. Their developments combine iconic design with functionality, making them a standout in the UAE market.</p>
                 </div>
-                <a href="#" class="content-btn btn btn-success rounded-2 d-flex align-items-center outline-btn">
+                <a href="#" class="content-btn btn btn-success rounded-2 d-flex align-items-center outline-btn" data-bs-toggle="modal" data-bs-target="#binghattiModal">
                   Register Now
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path d="M5 12H19M19 12L13 6M19 12L13 18"
@@ -248,7 +250,7 @@
           <div class="col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="schedule-card">
               <h2>Need Assistance? Schedule a Quick Call with Our Team</h2>
-              <a href="#" class="content-btn btn btn-success rounded-2 d-flex align-items-center outline-btn">
+              <a href="#" class="content-btn btn btn-success rounded-2 d-flex align-items-center outline-btn" data-bs-toggle="modal" data-bs-target="#binghattiModal">
                 Request A Call Back
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M5 12H19M19 12L13 6M19 12L13 18"
@@ -304,7 +306,7 @@
                   <p>The Heights Country Club & Wellness by Emaar offers a flexible payment plan designed to make owning a luxury villa or townhouse more accessible, with payments spread comfortably across construction and handover.</p>
                 </div>
                 <div class="button-group-block">
-                  <a href="#" class="content-btn btn btn-success rounded-2 d-flex align-items-center fill-btn">
+                  <a href="#" class="content-btn btn btn-success rounded-2 d-flex align-items-center fill-btn" data-bs-toggle="modal" data-bs-target="#binghattiModal">
                     Download Payment Plan
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
                       <path d="M5 12H19M19 12L13 6M19 12L13 18"
@@ -314,7 +316,7 @@
                         stroke-linejoin="round"/>
                     </svg>
                   </a>
-                  <a href="#" class="content-btn btn btn-success rounded-2 d-flex align-items-center outline-btn">
+                  <a href="#" class="content-btn btn btn-success rounded-2 d-flex align-items-center outline-btn" data-bs-toggle="modal" data-bs-target="#binghattiModal">
                     Download Brochure
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
                       <path d="M5 12H19M19 12L13 6M19 12L13 18"
@@ -593,11 +595,37 @@
       </div>
     </footer>
 
+    <!-- binghatti modal -->
+    <div class="modal fade binghatti-modal" id="binghattiModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content binghatti-modal-box">
+          <button type="button" class="binghatti-close" data-bs-dismiss="modal">×</button>
+          <div class="binghatti-body">
+            <h2 class="binghatti-title">DOWNLOAD BROCHURE</h2>
+            <p class="binghatti-sub">Fill in your details to download the brochure</p>
+            <form>
+              <input type="text" class="binghatti-input" placeholder="Full Name *">
+              <input type="email" class="binghatti-input" placeholder="Email Address *">
+              <div class="binghatti-phone">
+                <input id="phone" type="tel" placeholder="Mobile Number *">
+              </div>
+              <p class="binghatti-terms">
+                By clicking Submit, you agree to our
+                <a href="#">Terms & Conditions</a> and <br/>
+                <a href="#">Privacy Policy</a>.
+              </p>
+              <button type="submit" class="binghatti-btn">DOWNLOAD</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- jquery cdn -->  
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/intlTelInput.min.js"></script>
   <!-- Custom JS -->
   <script src="js/custom.js"></script>
 </body>

@@ -1019,8 +1019,101 @@ section.gallery{
   color: #b5b5b5;
 }
 
-
-
+/* =====================================
+    Modal
+===================================== */
+.binghatti-modal-box{
+  background:#111;
+  border:1px solid #2b2b2b;
+  color:#fff;
+  padding:40px;
+  position:relative;
+}
+.binghatti-close{
+  position:absolute;
+  top:15px;
+  right:15px;
+  background:none;
+  border:none;
+  color:#fff;
+  font-size:22px;
+  cursor:pointer;
+}
+.binghatti-title{
+  text-align:center;
+  margin-bottom:10px;
+  font-size: 35px;
+  color: var(--emaar-accent-3);
+}
+.binghatti-sub{
+  text-align:center;
+  color:#aaa;
+  margin-bottom:25px;
+}
+.binghatti-input{
+  width:100%;
+  background:#1c1c1c;
+  border:1px solid #333;
+  color:#fff;
+  padding:10px 14px;
+  margin-bottom:15px;
+}
+.binghatti-input:focus{
+  outline:none;
+  border-color:#c8a46b;
+}
+.binghatti-terms{
+  font-size:13px;
+  color:#aaa;
+  margin:25px 0;
+  text-align: center;
+}
+.binghatti-terms a{
+  color:#c8a46b;
+  text-decoration:none;
+}
+.binghatti-btn{
+  width:100%;
+  background:#c8a46b;
+  border:none;
+  padding:10px 14px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+.binghatti-btn:hover{
+  background:#b9965c;
+}
+.iti{
+  width:100%;
+}
+.binghatti-phone{
+  width:100%;
+  margin-bottom:15px;
+}
+.binghatti-phone .iti{
+  width:100%;
+}
+.binghatti-phone input{
+  width:100%;
+  background:#1c1c1c;
+  border:1px solid #333;
+  color:#fff;
+  padding:10px 14px 10px 95px;
+}
+.binghatti-phone input:focus{
+  outline:none;
+  border-color:#c8a46b;
+}
+.iti__country-list{
+  background:#111;
+  border:1px solid #333;
+}
+.iti__country{
+  color:#fff;
+}
+.iti__country:hover{
+  background:#222;
+}
 /* =========================
    Responsive Tweaks
 ========================= */
@@ -1387,6 +1480,18 @@ section.gallery{
   }
   .location-sc:before{
     opacity: 1;
+  }
+  .binghatti-modal-box{
+    padding: 30px 20px;
+  }
+  .binghatti-title{
+    font-size: 26px;
+  }
+  .binghatti-sub{
+    font-size: 12px;
+  }
+  .binghatti-terms {
+    font-size: 11px;
   }
 
 }

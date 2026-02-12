@@ -1135,10 +1135,10 @@ section.gallery{
     margin: 0;
     padding: 5px 0px;
     border-radius: 0;
-    background: var(--emaar-accent-6) !important;
+    background: transparent;
   }
   .navbar .container{
-    justify-content: center;
+    justify-content: space-between;
   }
   .navbar .navbar-brand img{
     filter: brightness(100);
@@ -1146,6 +1146,7 @@ section.gallery{
   header.header{
     top: 0px;
     z-index: 9999;
+    background: transparent !important;
   }
   .navbar a.btn.fill-btn{
     display: none !important;
@@ -1158,7 +1159,6 @@ section.gallery{
   button.navbar-toggler{
     padding: 0;
     border: none;
-    display: none;
   }
   .navbar .navbar-brand{
     color: var(--emaar-accent-5);
@@ -1167,13 +1167,17 @@ section.gallery{
   header.header .navbar .nav-link{
     padding: 10px 0px !important;
     border-bottom: 1px solid var(--emaar-accent-3);
+    border-radius: 0 !important;
+  }
+  header.header.bg-black.header-scrolled button.navbar-toggler{
+    filter: invert(1) !important;
   }
   .hero-section{
-    min-height: auto;
-    align-items: flex-start;
+    min-height: clamp(300px, 80vh, 830px);
+    align-items: flex-end;
     padding: 20px 0px 0px 0px;
-    justify-content: center;
-    margin-top: 46px;
+    justify-content: end;
+    display: flex;
   }
   .heroplan-main {
     padding: 120px 15px 0px 15px;
@@ -1265,7 +1269,7 @@ section.gallery{
     left: 33px;
   }
   .fill-btn{
-    padding: 8px 12px;
+    padding: 12px 12px;
     font-style: 12px;
   }
   .section.about .heading-flex{
@@ -1492,6 +1496,15 @@ section.gallery{
   }
   .binghatti-terms {
     font-size: 11px;
+  }
+  .gallery{
+    background: var(--emaar-accent-6);
+  }
+  .gallery .about-bg-video{
+    display: none;
+  }
+  .paymentplan-sc .button-group-block .fill-btn{
+    background: #636363;
   }
 
 }

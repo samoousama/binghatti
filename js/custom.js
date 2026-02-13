@@ -106,3 +106,25 @@ const input = document.querySelector("#phone");
   },
   separateDialCode:true
 });
+
+const menu = document.querySelector('.navbar-collapse');
+const closeBtn = document.querySelector('.menu-close');
+
+function smoothClose(e) {
+  e.preventDefault();
+
+  if (!menu.classList.contains('show')) return;
+
+  menu.classList.add('closing');
+
+  setTimeout(() => {
+    bootstrap.Collapse.getOrCreateInstance(menu).hide();
+    menu.classList.remove('closing');
+  }, 400);
+}
+
+closeBtn.addEventListener('click', smoothClose);
+
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+  link.addEventListener('click', smoothClose);
+});
